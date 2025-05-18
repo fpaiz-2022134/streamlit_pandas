@@ -5,6 +5,8 @@
     Carnet: 25780
     Catedrático: Carlos Alfonso
     Sección: 40
+    
+    GitHub: https://github.com/fpaiz-2022134/streamlit_pandas.git
 '''
 
 import streamlit as st
