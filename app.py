@@ -1,7 +1,15 @@
-import streamlit as st
-from views import charge, analysis, indicators, home
+'''
+    ** EJERCICIO 7 ***
 
-st.title("FILE X")
+    Estudiante: Franco Alejandro Paiz González
+    Carnet: 25780
+    Catedrático: Carlos Alfonso
+    Sección: 40
+'''
+
+import streamlit as st
+from views import charge, analysis, indicators, home, graphics
+
 st.sidebar.title("Menú")
 st.sidebar.header("Navegar")
 
@@ -15,6 +23,8 @@ elif selected_page == "Análisis exploratorio":
     analysis.basic_analysis()
 elif selected_page == "Indicadores":
     indicators.show()
+elif selected_page == "Gráficas":
+    graphics.show()
 else:
     st.title("Estado pendientes")
-    st.write("Contact us at: example@email.com")
+    st.write("Contact us at: fralpaiz@email.com")
